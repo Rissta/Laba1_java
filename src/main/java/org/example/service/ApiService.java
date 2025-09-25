@@ -11,7 +11,6 @@ import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.List;
 
-// Бля
 
 public class ApiService {
     // URL из задания. final - это константа

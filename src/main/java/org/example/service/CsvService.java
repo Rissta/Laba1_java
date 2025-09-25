@@ -6,6 +6,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Pattern;
+
 import org.example.dto.Character;
 
 
@@ -31,10 +33,11 @@ public class CsvService {
                 // то мы разбиваем линию по запятой с помощью split(",")
                 // на массив из слов, а после конвертим массив в лист
                 String[] values = line.split(",");
-                Character character = new Character(values);
-
-                // Добовляем лист который получился в другой лист который
-                data.add(character);
+                if (Pattern.matches("\\d+", values[0])){
+                    Character character = new Character(values);
+                    // Добовляем лист который получился в другой лист который
+                    data.add(character);
+                }
             }
 
         }

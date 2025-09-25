@@ -2,6 +2,8 @@ package org.example.dto;
 
 // Вот бы ламбук сюда...
 
+import java.util.Comparator;
+
 public class Character implements Comparable<Character>{
     public String id;
     public String name;
@@ -124,4 +126,71 @@ public class Character implements Comparable<Character>{
         return this.name.compareTo(other.name);
     }
 
+    // Это для сортировки (Не обязательно)
+    // === СТАТИЧЕСКИЕ КОМПАРАТОРЫ ДЛЯ РАЗНЫХ ПОЛЕЙ ===
+
+    public static Comparator<Character> byId() {
+        return Comparator.comparing(Character::getId);
+    }
+
+    public static Comparator<Character> byName() {
+        return Comparator.comparing(Character::getName);
+    }
+
+    public static Comparator<Character> byStatus() {
+        return Comparator.comparing(Character::getStatus);
+    }
+
+    public static Comparator<Character> bySpecies() {
+        return Comparator.comparing(Character::getSpecies);
+    }
+
+    public static Comparator<Character> byType() {
+        return Comparator.comparing(Character::getType);
+    }
+
+    public static Comparator<Character> byGender() {
+        return Comparator.comparing(Character::getGender);
+    }
+
+    public static Comparator<Character> byOrigin() {
+        return Comparator.comparing(Character::getOriginName);
+    }
+
+    public static Comparator<Character> byLocation() {
+        return Comparator.comparing(Character::getLocationName);
+    }
+
+    public static Comparator<Character> byCreated() {
+        return Comparator.comparing(Character::getCreated);
+    }
+
+    // === КОМБИНИРОВАННЫЕ КОМПАРАТОРЫ ===
+
+    // Сначала по статусу, потом по имени
+    public static Comparator<Character> byStatusThenName() {
+        return byStatus().thenComparing(byName());
+    }
+
+    // Сначала по виду, потом по статусу, потом по имени
+    public static Comparator<Character> bySpeciesStatusName() {
+        return bySpecies().thenComparing(byStatus()).thenComparing(byName());
+    }
+
+    // Обратная сортировка (Z-A)
+    public static Comparator<Character> byNameDesc() {
+        return byName().reversed();
+    }
+
+    // Примеры сортировок таких:
+    // Простые сортировки
+    //characters.sort(Character.byStatus());
+    //characters.sort(Character.bySpecies());
+    //
+    // Сложные сортировки
+    //characters.sort(Character.byStatus().thenComparing(Character.byName()));
+    //characters.sort(Character.bySpecies().thenComparing(Character.byStatus()).thenComparing(Character.byName()));
+    //
+    // Обратный порядок
+    //characters.sort(Character.byName().reversed());
 }

@@ -1,3 +1,59 @@
+null
+Character:{
+ id:'1',
+ name:'Rick Sanchez',
+ status:'Alive',
+ species:'Human',
+ type:'',
+ gender:'Male',
+ originName:'Earth (C-137)',
+ locationName:'Citadel of Ricks',
+ created:'2017-11-04T18:48:46.250Z'
+}
+Character:{
+ id:'2',
+ name:'Morty Smith',
+ status:'Alive',
+ species:'Human',
+ type:'',
+ gender:'Male',
+ originName:'unknown',
+ locationName:'Citadel of Ricks',
+ created:'2017-11-04T18:50:21.651Z'
+}
+Character:{
+ id:'3',
+ name:'Summer Smith',
+ status:'Alive',
+ species:'Human',
+ type:'',
+ gender:'Female',
+ originName:'Earth (Replacement Dimension)',
+ locationName:'Earth (Replacement Dimension)',
+ created:'2017-11-04T19:09:56.428Z'
+}
+Character:{
+ id:'4',
+ name:'Beth Smith',
+ status:'Alive',
+ species:'Human',
+ type:'',
+ gender:'Female',
+ originName:'Earth (Replacement Dimension)',
+ locationName:'Earth (Replacement Dimension)',
+ created:'2017-11-04T19:22:43.665Z'
+}
+Character:{
+ id:'5',
+ name:'Jerry Smith',
+ status:'Alive',
+ species:'Human',
+ type:'',
+ gender:'Male',
+ originName:'Earth (Replacement Dimension)',
+ locationName:'Earth (Replacement Dimension)',
+ created:'2017-11-04T19:26:56.301Z'
+}
 Character:{
  id:'6',
  name:'Abadango Cluster Princess',
@@ -151,70 +207,4 @@ Character:{
  originName:'unknown',
  locationName:'unknown',
  created:'2017-11-04T22:28:13.756Z'
-}
-Character:{
- id:'20',
- name:'Ants in my Eyes Johnson',
- status:'unknown',
- species:'Human',
- type:'Human with ants in his eyes',
- gender:'Male',
- originName:'unknown',
- locationName:'Interdimensional Cable',
- created:'2017-11-04T22:34:53.659Z'
-}
-Character:{
- id:'4',
- name:'Beth Smith',
- status:'Alive',
- species:'Human',
- type:'',
- gender:'Female',
- originName:'Earth (Replacement Dimension)',
- locationName:'Earth (Replacement Dimension)',
- created:'2017-11-04T19:22:43.665Z'
-}
-Character:{
- id:'5',
- name:'Jerry Smith',
- status:'Alive',
- species:'Human',
- type:'',
- gender:'Male',
- originName:'Earth (Replacement Dimension)',
- locationName:'Earth (Replacement Dimension)',
- created:'2017-11-04T19:26:56.301Z'
-}
-Character:{
- id:'2',
- name:'Morty Smith',
- status:'Alive',
- species:'Human',
- type:'',
- gender:'Male',
- originName:'unknown',
- locationName:'Citadel of Ricks',
- created:'2017-11-04T18:50:21.651Z'
-}
-Character:{
- id:'1',
- name:'Rick Sanchez',
- status:'Alive',
- species:'Human',
- type:'',
- gender:'Male',
- originName:'Earth (C-137)',
- locationName:'Citadel of Ricks',
- created:'2017-11-04T18:48:46.250Z'
-}
-Character:{
- id:'3',
- name:'Summer Smith',
- status:'Alive',
- species:'Human',
- type:'',
- gender:'Female',
- originName:'Earth (Replacement Dimension)',
- locationName:'Earth (Replacement Dimension)',
- created:'2017-11-04T19:09:56.428Z'
 }
